@@ -1,8 +1,3 @@
-
-
-### `README.md`
-
-```markdown
 # MNIST-SOPCNN
 
 This is my implementation of Stochastic Optimization of Plain Convolutional Neural Networks (SOPCNN) on the MNIST dataset.
