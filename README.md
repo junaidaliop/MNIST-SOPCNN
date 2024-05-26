@@ -94,7 +94,7 @@ class SOPCNN(nn.Module):
         x = F.relu(self.conv3(x))
         x = F.relu(self.conv4(x))
         x = self.pool(x)
-        x = x.view(-1, 256 * 7 * 7)  # Flatten the tensor
+        x = x.view(-1, 256 * 7 * 7)
         x = F.relu(self.fc1(x))
         x = self.dropout(x)
         x = self.fc2(x)
