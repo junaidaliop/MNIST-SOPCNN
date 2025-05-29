@@ -14,12 +14,6 @@ This project implements a simple Convolutional Neural Network (CNN) model, named
 
 The MNIST dataset is a large database of handwritten digits that is commonly used for training various image processing systems. It is available at [this link](http://yann.lecun.com/exdb/mnist/).
 
-## Results
-
-The model achieved a validation accuracy of 99.67%, which is slightly less than the experiments mentioned in the original paper. Below is the accuracy plot:
-
-![Accuracy Plot](results/plots/accuracy_plot.png)
-
 ## Experimental Setup
 
 - **Batch Size**: 256
@@ -132,6 +126,25 @@ class SOPCNN(nn.Module):
 ## Future Work
 
 One can extend this experiment to other datasets such as CIFAR10, CIFAR100, and SVHN.
+
+## 🚀 **Update – May 29, 2025**
+
+🎉 I’ve **achieved SOTA** results (matching the paper) using **SGD + Lookahead**!
+
+📦 **SOTA Weights Available**:
+Download them here 👉 [📁 Google Drive Link](https://drive.google.com/drive/folders/18SIYqa6mh4c4Lns-GhYBLs4F83O-w2LC?usp=sharing)
+
+---
+
+## 📊 **Results Summary**
+
+|    Optimizer          |    LR  | 🏆 Best Test Accuracy |
+| --------------------- | ------ | --------------------- |
+| **⚡ SGD + Lookahead** | `0.01` | **🔥 99.78% 🔥**      |
+
+Previously, the same model achieved a validation accuracy of 99.67% using Adam optimizer, which is slightly less than the experiments mentioned in the original paper. Below is the accuracy plot for that experiment:
+
+![Accuracy Plot](results/plots/accuracy_plot.png)
 
 ## Contact Details
 
